@@ -1,0 +1,179 @@
+@import "../../css/ifream-site/nav.css";
+@import "../../css/ifream-site/footer.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; 
+    transition: .8s;
+    scroll-behavior: smooth;
+}
+body{
+    background:var(--bg-color);
+}
+
+/* contact */
+.contact{
+    background: var(--content-color);
+}
+.contact-title{
+    text-align: center;
+    max-width: 1020px;
+    background: var(--content-color);
+    padding: 5px;
+    margin: 10px auto;
+}
+.contact .content{
+    display: flex;
+    max-width: 1020px;
+    margin: 10px auto;
+    
+}
+.content-left{
+    max-width: 600px;
+    padding: 5px;
+}
+.content-left h2{
+    font-size: 28px;
+    margin-left: 18px;
+}
+/* ------------------------------------ */
+.accordion{
+    margin: 5px auto;
+    width: 500px;
+    padding: 5px;
+}
+.accordion li{
+    list-style: none;
+    background: rgb(231, 227, 227);
+    width: 100%;
+    margin: 5px;
+    padding: 2px 5px;
+    border-radius: 8px;
+}
+.accordion label{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    opacity: .5;
+    transition: .5s;
+}
+
+.accordion label::before{
+    content: '+';
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.accordion label:hover{
+    opacity: 1;
+    font-weight: 600;
+}
+.accordion input:checked + label{
+    opacity: 1;
+    font-weight: 600;
+    border-bottom: 2px solid rgb(130, 130, 130);
+}
+.accordion input[type="radio"]{
+    display: none;
+}
+.accordion .content{
+    color: #555;
+    padding: 0 5px;
+    line-height: 26px;
+    max-width: 470px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.accordion input[type="radio"]:checked + label + .content
+{
+    max-height: 400px;
+}
+.accordion input[type="radio"]:checked + label::before{
+    content: '-';
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.accordion input[type="radio"]:checked + label::after{
+    content: icon;
+}
+/* ------------- */
+.content-right{
+    width: auto;
+    padding: 10px;
+}
+.content-right h2{
+    font-size: 28px;
+    margin-left: 8px;
+    margin-bottom: 7px;
+}
+.content-right form input{
+    width: 100%;
+    height: 50px;
+    margin: 5px 0;
+    padding-left: 8px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid rgb(179, 163, 163);
+}
+.content-right form textarea{
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px 8px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid rgb(179, 163, 163);
+    resize: none;
+}
+.content-right form button{
+    width: 100%;
+    background: rgb(92,151,169);
+    border: none;
+    height: 40px;
+    cursor: pointer;
+    transition: .5s;
+    color: var(--content-color);
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+.content-right form button:hover{
+    transform: scale(0.9);
+}
+
+footer{
+    margin-top: 30px;
+}
+
+@media all and (max-width:968px){
+    .content .content-left ul{
+        display: block;
+    }
+    .accordion li{
+        margin: 5px 0;
+        padding: 2px 5px;
+        border-radius: 8px;
+    }
+    .contact .content{
+        flex-direction: column;
+        max-width: 800px;
+    }
+    .content-left{
+        max-width: 800px;
+        padding: 5px;
+    }
+    .accordion{
+        width: 100%;
+        margin: 0;
+        margin-right: 5px;
+    } 
+}
+
+

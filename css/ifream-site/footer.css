@@ -1,0 +1,38 @@
+footer{
+    background: var(--main-color);
+    width: 100%;
+    text-align: center;
+    margin-top: 380px;
+}
+
+footer img{
+    width: 100px;
+    height: 100px;
+    margin-top: 5px;
+}
+
+.footer_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_link a{
+    color: var(--content-color);
+    padding: 0 5px;
+}
+
+footer a, 
+footer p{
+    color: var(--content-color);
+}
+
+footer p{
+    padding-bottom: 15px;
+}
+
+@media screen and (max-width:540px){
+    footer{
+        padding-bottom: 0;
+    }
+}

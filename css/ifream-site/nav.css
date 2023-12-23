@@ -1,0 +1,312 @@
+/* 	
+主要顏色
+HEX #5c97a9
+RGB (92,151,169)
+nav ul : z-index:99 ;
+body background: #fbfafa;
+區塊背景色#fff;
+區塊 m-w 1000
+ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; 
+    transition: .8s;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --main-color:#5c97a9;
+    --content-color:#fff;
+    --bg-color: #fbfafa;
+}
+
+body{
+    background: var(--bg-color);
+    transition: .8s;
+}
+/* 共用 */
+.sideline{
+    height: 40px;
+    border: 3px solid var(--main-color);
+    margin: 10px;
+}
+.angle{
+    padding: 10px 10px;
+    border-radius: 4px;
+    opacity: .3;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,.5);
+    transition: .5s;
+  }
+  .angle a i{
+    color: black;
+    font-size: 40px;
+    transition:.5s;
+  }
+  .angle a i:hover{
+      transform: translateY(-5px);
+    }
+  .angle:hover {
+      opacity: .9;
+  }
+  
+/* top */
+.top{
+    width: 100%;
+    height: 50px;
+    background: rgb(92,151,169);
+    line-height: 50px;
+}
+.top a{
+    color: var(--content-color);
+    cursor: pointer;
+}
+.top .top_left{
+    float: left;
+    padding-left: 20px;
+    opacity: 0;
+}
+
+.top .top_left:hover{
+    opacity: 1;
+}
+
+.top .top_right{
+    float: right;
+    padding-right: 20px;
+    height: 35px; 
+    overflow: hidden;
+}
+
+
+.nav-top{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1100;
+    box-shadow:5px 5px 5px 1px #e4dfdf;
+}
+nav{
+    width: 100%;
+    background: var(--bg-color);
+}
+nav:after{
+    content:'';
+    clear:both;
+    display: table;
+}
+.logo img{
+    float: left;
+    padding: 5px 0 5px 15px;
+    width: 100px;
+    height: 100px;
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+    z-index: 99;
+}
+nav ul li{
+    float: left;
+    display:inline-block;
+    background: var(--bg-color);
+    margin: 10px 0;
+}
+nav ul li a{
+    color: #1b1b1b;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+/* 將一個或多個陰影附加到一個元素 */
+nav ul li a:hover{
+    color: rgb(92,151,169);
+}
+nav ul ul li a:hover{
+    color: rgb(92,151,169);
+    /* box-shadow:none; */
+}
+nav ul ul {
+    padding-top: 28px;
+    position: absolute;
+    top: 90px;
+    border-top:1px solid rgb(92,151,169);
+    opacity: 0;
+    visibility: hidden;
+    transition: top.3s;
+}
+nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+nav ul ul li{
+    position: relative;
+    margin: 0;
+    width: 130px;
+    float: none;
+    display: list-item;
+}
+nav ul ul li a{
+    line-height: 50px;
+}
+.navbar{
+    display: none;
+}
+
+.show,
+.bars, 
+nav input{
+    display: none;
+}
+.fa-angle-down{
+    margin-left: 10px;
+}
+
+.box-icon{
+    font-size: 1.5rem;
+}
+
+/* current_location目前位置 */
+.current_location{
+    padding-top: 120px;
+    background: var(--bg-color);
+    width: 100%;
+    color: grey;
+}
+.current_location ul{
+    display: flex;
+    list-style: none;
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-bottom: 10px;
+}
+.current_location ul li{
+    padding: 5px;
+}
+.current_location ul li a{
+    color: grey;
+    font-weight: 600;
+    opacity: 0.7;
+}
+.current_location ul li a i{
+    color: red;
+    font-weight: bold;
+    padding-left: 5px;
+}
+.current_location ul li a:hover{
+    color: black;
+    font-weight: 600;
+    transition: .5s;
+}
+.nav-boxicon{
+    opacity: 0;
+}
+.nav-contact a{
+    padding: 0;
+}
+@media all and (max-width:1025px){
+    .angle{
+        bottom: 55px;
+    }
+}
+@media all and (max-width:968px){
+    nav ul {
+        margin-left: 0;
+        float: left;
+        text-align: center;
+        width: 100%;
+    }
+    nav ul li , nav ul ul li{
+        display: block;
+        width: 100%;
+        margin: 0 5px;
+    }
+    nav ul ul {
+        top: 70px;
+        /* static靜止的 
+        出現在文檔的常規位置，不會重新定位。
+        通常此屬性值可以不設置，除非是要覆蓋之前的定義。*/
+        position: static;
+        border-top: none;
+        float: none;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+        padding-top: 0;
+    }
+
+    nav ul ul a{
+        padding-left: 40px;
+    }
+
+    .show{
+        /*display:block - 區塊，元素會以區塊方式呈現，除非設定 position 或 float。
+          display:inline - 所有文字或圖片均不換行，也就是全部都會是同一行的意思。  */
+        display: block;
+        font-size: 18px;
+        padding: 0 20px;
+        line-height: 70px;
+        cursor: pointer;
+        padding-left: 40px;
+    }
+    .show:hover{
+        color: rgb(92,151,169);
+    }
+    .bars{
+        display: block;
+        color: black;
+        position: absolute;
+        right: 30px;
+        line-height: 90px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    nav ul li a:hover{
+        box-shadow: none;
+    }
+    /* 加號符號(+)則是會影響到後方同層級的第一個元素 */
+    .show + a, ul{
+        display: none;
+    }
+    [id^=btn]:checked + ul {
+        display: block;
+    }
+    /* .current_location */
+    .current_location ul{
+        padding-left: 20px;
+        padding-bottom: 0;
+    }
+    .box-icon::after{
+        content:'會員登入/註冊'
+    }
+    .cart-nav::after{
+        content: '購物車';
+    }
+
+    .box-icon,
+    .cart-nav{
+        color: black;
+        background: var(--bg-color);
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .fa-bars{
+        margin-left: 15px;
+    }
+    .nav-boxicon{
+        opacity: 1;
+        padding: 3px;
+    }
+}

@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; 
+    transition: .8s;
+    scroll-behavior: smooth;
+}
+body{
+    background: #fbfafa;
+    transition: .8s;
+}
+.nav-top {
+background: rgb(92,151,169);
+}
+
+
+.top{
+    height: 80px;
+    padding: 15px;
+}
+.nav-top h2{
+    text-align: center;
+    font-size: 36px;
+    color: #fff;
+}
+/* 共用 */
+hr{
+    width: 80px;
+    height: 3px;
+    background: rgb(92,151,169);
+    border: none;
+    margin-left: 30px;
+}
+h2{
+    font-size: 26px;
+    padding: 5px 0 5px 10px;
+}
+
+/* url */
+.url{
+    max-width: 1020px;
+    margin: 100px auto 0;
+    background: #fff;
+    padding: 10px;
+}
+.url a{
+    color: black;
+}
+.url a:hover{
+    background: rgb(92,151,169);
+}
+/* 主題名稱和目標 */
+.theme,
+.structure_diagram,
+.leading_principles,
+.schedule{
+    max-width: 1020px;
+    margin: 10px auto;
+    padding: 10px;
+    background: #fff;
+}
+.theme ol,
+.leading_principles ul,
+.leading_principles ol{
+    margin: 10px 0 5px 35px;
+    font-size: 1.3rem;
+}
+/* structure_diagram */
+
+.item{
+    margin: 10px;
+    box-shadow:
+                inset 0 -3em 3em rgba(0,0,0,0.1),
+                0 0  0 2px rgb(255,255,255),
+                0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+
+.structure_diagram .content{
+    display: flex;
+}
+.structure_diagram .content p{
+    padding: 10px;
+}
+.item h3{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5px;
+    margin: 15px;
+}
+.content-img{
+    max-width: 500px;
+}
+.content-img img{
+    width: 100%;
+}
+.content-text{
+    max-width: 500px;
+    margin-bottom: 5px;
+}
+.content-text p{
+    font-size: 1.1rem;
+}
+.content-text ul{
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.content-text ul li{
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+.content-text ul li ol{
+    margin-left: 20px;
+    font-size: 1rem;
+}
+.schedule table{
+    background: rgb(255, 252, 252);
+    font-size: 1.2rem;
+    padding: 5px;
+}
+.schedule table .time{
+    text-align: center;
+}
+.schedule .title-left{
+    width: 150px; 
+    background: rgb(240, 230, 230);
+    text-align: center;
+}
+.schedule .title-right{
+    width: 500px; 
+    background: rgb(240, 230, 230);
+    text-align: center;
+}
+@media all and (max-width:968px){
+    ul{
+        display: block;
+    }
+
+}
+@media all and (max-width:768px){
+    .structure_diagram .content{
+        flex-direction: column;
+    }
+}
+

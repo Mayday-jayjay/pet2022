@@ -1,0 +1,208 @@
+@import "../../css/ifream-site/nav.css";
+@import "../../css/ifream-site/footer.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; 
+}
+body{
+    background: var(--bg-color);
+}
+
+/* sigin */
+.forms-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-color);
+    column-gap: 30px;
+    margin-top: 520px;
+}
+.form{
+    position: absolute;
+    max-width: 580px;
+    width: 100%;
+    background: var(--content-color);
+    border-radius: 6px;
+    padding: 30px;
+    margin: auto;
+}
+header{
+    font-size: 40px;
+    font-weight: 900;
+    color: #232836;
+    text-align: center;
+}
+form{
+    margin-top: 10px;
+}
+.form .field{
+    position: relative;
+    height: 55px;
+    width: 500px;
+    margin: 10px auto;
+    border-radius: 6px;
+}
+
+.field input,
+.field button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+}
+.field button{
+    color:var(--content-color);
+    background: #317fc4;
+    transition: all .8s ease;
+}
+.field button:hover{
+    background: #016dcb;
+}
+
+.field button{
+    cursor: pointer;
+}
+.field input{
+    padding: 0 15px;
+    border: 1px solid #cacaca;
+    outline: none;
+    background: #eaeaea;
+    font-size: 20px;
+}
+.field input:focus{
+    border-bottom-width: 3px;
+}
+.form.signup{
+    opacity: 0;
+    pointer-events: none;
+}
+.forms.show-signup .form.signup{
+    opacity: 1;
+    pointer-events: auto;
+}
+.forms.show-signup .form.login{
+    opacity: 0;
+    pointer-events: none;
+}
+.eye-icon{
+    position: absolute;
+    cursor: pointer;
+    font-size: 18px;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    padding: 5px;
+}
+
+.form-link-mange{
+    max-width: 500px;
+    margin: auto;
+}
+.form-link{
+    margin-top: 10px;
+}
+.form-link span, 
+.form-link a{
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: grey;
+}
+.form-content a:hover,
+.form-link a:hover{
+    text-decoration: underline;
+}
+
+
+
+.line{
+    position: relative;
+    background: #cacaca;
+    height: 1px;
+    width: 100%;
+    margin: 30px 0;
+}
+.line::before{
+    position: absolute;
+    content: '還沒有會員嗎？立即加入我們';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--content-color);
+    color: #232836;
+    padding: 0 15px;
+}
+
+.media-options a{
+    display: flex;
+    background: #4267b2;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+a.facebook{
+    color: var(--content-color);
+    background: #4267b2;
+}
+a.google,
+a.register{
+    color: rgb(233, 32, 32);
+    background: var(--content-color);
+    border: 1px solid #cacaca;
+}
+a.google span,
+a .register span{
+    color: #016dcb;
+    opacity: 0.8;
+    font-weight: 600;
+}
+a .facebook .facebook-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 28px;
+    width: 28px;
+    color: #0171b3; 
+    font-size: 28px;
+    background: var(--content-color);
+    border-radius: 50%;
+}
+
+a .google .google-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 28px;
+    width: 28px;
+    color: red; 
+    font-size: 28px;
+    background: var(--content-color);
+    border-radius: 50%;
+}
+.facebook-icon ,
+.google-icon{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+.forms_text{
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: grey;
+}
+
+@media screen and (max-width:540px){
+    .form .field{
+        width: 100%;
+    } 
+}

@@ -1,0 +1,698 @@
+/* 	
+主要顏色
+HEX #5c97a9
+RGB (92,151,169)
+nav ul : z-index:99 ;
+body background: #fbfafa;
+區塊背景色#fff;
+區塊 m-w 1000
+ */
+@import "../css/ifream-site/nav.css";
+@import "../css/ifream-site/footer.css";
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; 
+    transition: .8s;
+    scroll-behavior: smooth;
+}
+body{
+    background: var(--bg-color);
+    transition: .8s;
+}
+.prodiv{
+    position: fixed;
+    z-index: 99;
+    top: 200px;
+    right: 10px;
+    width: 20px;
+    height: 140px;
+    box-shadow: 3px 4px 0px 0px #1564ad;
+    background: linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+    border-radius: 5px;
+    border: 1px solid #337bc4;
+    display: inline-block;
+    cursor: cell;
+    color: #ffffff;
+    font-family: 標楷體;
+    font-size: 20px;
+    padding: 10px 24px;
+    text-shadow: 0px 10px 0px #528ecc;
+    transition: 1s;
+    animation: proposal 3s;
+    opacity: 0;
+}
+@keyframes proposal{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
+
+
+
+.carousel{
+    max-width: 1020px;
+    height: auto;
+    margin:160px auto 0;
+    height: 550px;
+}
+.carousel iframe{
+    width: 100%;
+    height: 100%;
+}
+
+    /*  */
+  /* news */
+    /*  */
+.news{
+    max-width: 1000px;
+    background: var(--content-color);
+    display: flex;
+    margin: auto;
+    padding: 10px;
+}
+.news_fun{
+    text-align: center;
+    margin: 10px;
+}
+.news_fun_content i{
+    font-size: 40px;
+    color: rgb(2, 81, 2);
+}
+.news_fun_content i:hover{
+    transition: 3s;
+    transform: rotate(1turn);
+}
+.news_fun p{
+    color: rgb(2, 81, 2);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* 邊牧羊犬 */
+.news_content{
+    max-width: 700px;
+    margin:0 30px;
+}
+.news_content .Border_Collie{
+    max-width: 300px;
+    height: 400px;
+}
+.news_content h2{
+    margin-top: 30px;
+}
+.news_content p{
+    margin-top: 20px;
+    color: #1b1b1b;
+}
+.news_content_img{
+    display: flex;
+    text-align: center;
+    padding:15px 0 0 10px;
+}
+.news_content_img_item{
+    margin:0 20px;
+    margin: auto;
+}
+.news_content_img_item a{
+    color: var(--content-color);
+}
+.news_content_img_item img{
+    max-width: 150px; 
+    height:150px; 
+    border-radius: 50%;
+    transition: 1s;
+}
+.news_content_img_item img:hover{
+    box-shadow: 2px 5px 5px 5px rgb(153, 237, 147);
+}
+.news_content_Collie{
+    margin: auto;
+}
+.news_content_Collie img{
+    max-width: 350px;
+    height: 400px;
+    transition: 1s;
+}
+.news_content_Collie img:hover{
+    border-radius : 50%;
+}
+.news_content_text p{
+    padding: 15px;
+}
+.nav_product{
+    background:var(--content-color);
+    padding: 10px;
+}
+.nav_product_text{
+    text-align: center;
+}
+.nav_product_text h2{
+    font-weight: bold;
+    font-size: 30px;
+}
+.nav_product h3{
+    margin-top: 10px;
+}
+.nav_product p{
+    margin-top: 20px;
+}
+/* nav_product_content */
+.nav_product_content{
+    display: flex;
+    max-width: 1000px;
+    margin:10px auto;
+    align-items: center;
+    justify-content: center;
+}
+.nav_product_content .item{
+    text-align: center;
+    margin: auto;
+}
+.nav_product_content .fa-solid{
+    font-size: 30px;
+    padding: 5px;
+}
+.nav_product_content .fa-horse{
+    color: rgb(87, 87, 249);
+}
+.nav_product_content .fa-feather{
+    color:rgb(247, 179, 54) ;
+}
+.nav_product_content .fa-paw{
+    color:greenyellow;
+}
+.nav_product_content .fa-cat{
+    color:rgb(244, 87, 113);
+}
+
+
+.nav_product_content .item a i,
+.nav_product_text h2,
+.nav_product_text h3,
+.nav_product_text p{
+    transition: all 0.5s;
+}
+.nav_product_content .item i:hover,
+.nav_product_text h2:hover,
+.nav_product_text h3:hover,
+.nav_product_text p:hover{
+    transform:  translateY(-10%);
+}
+
+/* assurance保證 */
+.assurance_title,
+.popular_produc_title,
+.new_products_title,
+.cd_school_title{
+    display: flex;
+    max-width: 1000px;
+    align-items: left;
+    justify-content: left;
+    margin: auto;
+}
+.assurance_title h2, 
+.popular_produc_title h2,
+.new_products_title h2,
+.cd_school_title h2{
+    margin-top: 13px;
+    font-size: 23px;
+}
+.assurance{
+    margin: 10px;
+}
+.assurance_content{
+    display: flex;
+    max-width: 1000px;
+    background: var(--content-color);
+    text-align: center;
+    margin: 10px auto;
+}
+.assurance_content .item{
+    max-width: 250px;
+    margin: 20px;
+    padding: 5px;
+}
+.assurance_contente .item h3{
+    margin: 10px;
+}
+.assurance_content .fa-solid{
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+.assurance_content .fa-award{
+    color: rgb(242, 69, 69);
+}
+.assurance_content .fa-bullhorn{
+    color: gold;
+}
+.assurance_content .fa-flag-usa{
+    color: rgb(157, 157, 238);
+}
+.assurance_content .fa-check-to-slot{
+    color: palevioletred;
+}
+
+.assurance_content .item:hover,
+.new_products_item .item:hover{
+    transform:  translateY(-5%);
+}
+/* <!-- popular_product人氣商品 --> */
+.popular_product_slide-container,
+.new_products_slide-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    width: 100%;
+    background: var(--content-color);
+    padding: 40px 0;
+}
+.new_products{
+    max-width: 1000px;
+    margin: auto;
+    background: var(--content-color);
+}
+.new_products_item{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 1.5rem;
+}
+.new_products_item .item{
+    padding: 20px 20px 10px 20px;
+}
+.new_products_item img{
+    width: 100%;
+}
+.new_products_item .ranking{
+    color: red;
+    font-weight: 700;
+    text-align: center;
+}
+.ranking-item{
+    margin-top: 50px;
+}
+
+.popular_product_slide-container .card-image,
+.new_products_slide-container .card-image{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: var(--content-color);
+    padding: 3px;
+}
+.popular_product_slide-container .card-image img,
+.new_products_slide-container .card-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.8s;
+}
+.popular_product_slide-container .card-image img:hover{
+    transform: scale(1.1);
+    z-index: 2999;
+}
+.popular_product_slide-container .card,
+.new_products_slide-container .card{
+    border-radius: 25px;
+    background:var(--content-color);
+    width: 320px;
+}
+.popular_product_slide-content,
+.new_products_slide-content{
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+.image-content, .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+.image-content{
+    position: relative;
+    padding: 25px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: solid 1px #ebe6e6;
+    background: var(--content-color);
+    border-radius: 25px;
+}
+.card-content h2{
+    font-weight: 700;
+    font-size: 23px;
+    letter-spacing: 2px;
+}
+.card-content p{
+    font-size: 18px;
+    padding: 5px 0 5px 5px;
+    color: #313131;
+    font-weight: 400;
+}
+.card-content .button{
+    font-size: 15px;
+    padding: 8px 16px;
+    background: rgb(123, 200, 223);
+    border: none;
+    border-radius: 6px;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.card-content .button:hover{
+    background: rgb(92,151,169);
+}
+/* cd_school 貓狗小學堂 */
+.cd_school{
+    max-width: 1000px;
+    display: flex;
+    margin:10px auto;
+    background:var(--content-color);
+    align-items: center;
+}
+.cd_school_content{
+    max-width: 300px;
+    margin-left: 40px;
+    text-align: center;
+}
+.cd_school_content h2{
+    letter-spacing: 2px;
+    font-size: 28px;
+}
+.cd_school_content p {
+    font-size: 18px;
+    margin: 16px;
+    padding-top: 10px;
+    letter-spacing: 1px;
+}
+.cd_school_content button{
+    cursor: pointer;
+    border: none;
+    background: rgb(123, 200, 223);
+    border-radius: 6px;
+    margin: 5px;
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+.cd_school_content button:hover{
+    background: #b5d7e1;
+    translate: 5px 2px;
+    
+}
+.cd_school_content button:checked{
+    transform: rotate(45deg);
+}
+
+.cd_school_img{
+    margin: auto;
+    width: 500px;
+    height: 280px;
+    padding: 10px;
+}
+.cd_school_img iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.box3 {
+    background: #2db34a;
+    border-radius: 6px;
+    height: 95px;
+    width: 95px;
+    line-height: 95px;
+    text-align: center;
+    color: white;
+    font-size: 11px;
+    transition: ease 1s ;
+  }
+  
+.box3:hover {
+    transform: scale(2,2);
+  }
+
+  /* footer */
+footer{
+    margin-top: 20px;
+}
+
+
+.fc{
+    width: 150px; 
+    height: 30px;
+}
+@media all and (max-width:968px){
+
+    .carousel{
+        height: 450px;
+    }
+    /* news */
+    .news{
+        width: auto;
+        margin: 10px;
+    }
+    .news_content{
+        width: 400px;
+    }
+    .news_content_Collie{
+        width: auto;
+        padding-left: 20px;
+    }
+    .news_content_Collie img{
+        margin-top: 80px;
+        width: 230px;
+        height: 320px;
+    }
+
+    /* assurance保證 */
+    .assurance_title,
+    .popular_produc_title,
+    .new_products_title,
+    .cd_school_title{
+        width: auto;
+    }
+
+    .assurance_content{
+        width: auto;
+        margin: 10px auto;
+    }
+    .assurance_content .item{
+        width: auto;
+        margin: 0;
+        padding:20px 10px;
+    }
+
+    .cd_school{
+        width: auto;
+        margin: 10px;
+    }
+    .cd_school_item_one{
+        margin-left: 30px;
+        padding: 0;
+        padding-left: 25px;
+    }
+    .cd_school_item_two{
+        margin-left: 10px;
+    }
+    
+
+}
+@media all and (max-width:768px){
+    .carousel{
+        height: 320px;
+    }
+    .news{
+        margin: 10px;
+    }
+    .news{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .news_content{
+        width: 540px;
+        margin:0 30px;
+    }
+    .news_content_Collie{
+        width: auto;
+        padding-left: 0;
+        
+    }
+    .news_content_Collie img{
+        margin: 20px;
+        width: 200px;
+        height: 220px;
+    }
+    /* assurance保證 */
+    .cd_school_item_one{
+        margin-left: 30px;
+        padding: 0;
+        padding-left: 25px;
+    }
+    .cd_school_item_two{
+        margin-left: 10px;
+    }
+    .cd_school_img img{
+        width: 210px;
+        height: 200px;
+        margin: 10px;
+    }
+    .cd_school_content{
+        width: 100%;
+        margin:20px;
+        text-align: center;
+    }
+    .cd_school{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cd_school_content button{
+        margin: 5px;
+        width: 60%;
+        height: 40px;
+    }
+    .ranking-item{
+        margin-top: 0;
+    }
+
+}
+
+@media all and (max-width:540px){
+    .carousel{
+        height: 240px;
+    }
+    .news{
+        flex-direction: column;
+    }
+    .news_content{
+        width: 460px;
+        margin:0 30px;
+    } 
+    .news_content_Collie img{
+        margin-top: 20px;
+        width: 250px;
+        height: 300px;
+    }
+    .news_content_img{
+        flex-direction: column;
+    }
+    .news_content_img_item{
+        margin:0;
+    }
+    .news_content_img_item a img{
+        padding: 10px;
+    }
+    .news_content_img_item a p{
+        margin-bottom: 10px;
+        
+    }
+    /* assurance保證 */
+    .assurance_content{
+        width: auto;
+        flex-direction: column;
+        margin: 20px;
+    }
+    .assurance_content .item{
+        width: 100%;
+        margin:5px auto;
+        /* margin-top: 5px; */
+    }
+    .cd_school{
+        flex-direction: column;
+        width: auto;
+        margin: 10px;
+    }
+
+    .cd_school_content{
+        width: auto;
+        margin: 0;
+        text-align: center;
+    }
+    .cd_school_content h2{
+        margin: 10px;
+    }
+    .cd_school_content p {
+        margin: 13px;
+    }
+    .cd_school_content button{
+        margin: 5px;
+        width: 70%;
+        height: 40px;
+    }
+    .cd_school_img{
+        max-width: 400px;
+    }
+    
+}
+
+@media all and (max-width:420px){
+    .carousel{
+        height: 250px;
+    }
+    .news_content{
+        width: auto;
+        margin:0 auto;
+        margin: 10px;
+    }
+    .cd_school_img{
+        width: auto;
+    }
+    .cd_school_item_one,
+    .cd_school_item_two{
+        padding: 10px;
+        margin: 0;
+    }
+    .cd_school_item_one img,
+    .cd_school_item_two img{
+        margin: 0;
+    }
+
+}
+@media all and (max-width:376px){
+    .carousel{
+        height: 150px;
+    }
+    .news_content_Collie img{
+        max-width: 150px;
+        height: 200px;
+    }
+
+}
+@media all and (max-width:281px){
+    .carousel{
+        height: 120px;
+    }
+    .nav_product_content{
+        margin:0;
+        width: auto;
+    }
+    .nav_product_content .item{
+        margin: 4px;
+    }
+    .nav_product_content img{
+        width: 45px;
+    }
+
+    .nav_product_content h4{
+        font-size: 12px;
+        margin: 3px;
+    }
+    .nav_product_quality_h4{
+        padding-top: 3px;
+    }
+    .nav_product_h4{
+        padding-bottom: 4px;
+    }
+}

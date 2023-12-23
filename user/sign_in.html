@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- sharethis -->
+	<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=6485fe507a3efa001293385d&product=sop' async='async'></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員登入/會員註冊</title>
+    <link rel="stylesheet" href="../css/user/style.css">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Boxicons CSS  https://boxicons.com/usage#html -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--  -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+</head>
+<body>
+        <!--  -->
+    <!-- nav-top and nav -->
+        <!--  -->
+    <div id="navbar" class="nav-top">
+        <div class="top">
+            <a href="../proposal/proposal.html"><h3 class="top_left">期末網站企畫書</h3></a>
+            <div class="top_right" id="google_translate_element"></div> 
+        </div>
+        <!-- nav -->
+        <nav>
+            <!-- logo img -->
+            <div class="logo">
+                <a href="../index.html"><img src="https://i.imgur.com/HuXBLE0.png" alt="logo"></a>
+            </div>
+            <!-- bars -->
+            <label for="btn" class="bars">
+                <span class="fa fa-bars"></span>
+            </label>
+            <input type="checkbox" id="btn">
+            <!-- nav ul -->
+            <ul>
+                <li><a href="../about/about.html"><i class='bx bx-universal-access nav-boxicon'></i>關於我們</a></li>
+                <li><a href="../news/announcement.html"><i class='bx bx-news nav-boxicon'></i>最新消息</a></li>
+                <li>
+                    <label for="btn-1" class="show" id="show"><i class='bx bx-store-alt nav-boxicon'></i>線上商城<i class="fa fa-angle-down"></i></label>
+                    <a href="#"><i class='bx bx-store nav-boxicon'></i>線上商城<i class="fa fa-angle-down"></i></a>
+                    <input type="checkbox" id="btn-1">
+                    <ul>
+                        <li><a href="../product/new.html">最新商品</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-contact"><a href="../contact/contact.html"><i class='bx bx-message-alt-add nav-boxicon'></i>聯絡我們</a></li>
+                <!-- 購物車  原為cart 改為cart-nav-->
+                <li class="cart-nav">
+                    <a href="../product/cart.html">
+                        <ion-icon title="購物車" class="cart-nav" name="cart"></ion-icon><span>0</span>
+                    </a>
+                </li>
+                <!-- 登入或註冊  -->
+                <li><a class="box-icon" title="登入/註冊" href="../user/sign_in.html"><ion-icon class="nav-login" name="log-in"></ion-icon></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="forms-container forms">
+        <div class="form login">
+            <div class="form-content">
+                <header>會員登入</header>
+                <form action="">
+                    <!-- 信箱 -->
+                    <div class="field input-field">
+                        <input type="email" class="input" placeholder="請輸入電子郵件" required>
+                    </div>
+                    <!-- 密碼 -->
+                    <div class="field input-field">
+                        <input type="password" class="password" placeholder="請輸入密碼" required>
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+                    <!-- 會員註冊 和 忘記密碼 -->     
+                    <div class="form-link-mange">
+                        <!-- 忘記密碼 -->
+                        <div class="form-link form-link-right">
+                            <a class="forgot-pass" href="./forget_password.html">忘記密碼?</a>
+                        </div>
+                    </div>
+                    <!-- 登入按鈕 -->
+                    <div class="field button-field">
+                        <button>登入</button>
+                    </div>
+                </form>
+            </div>
+            <!-- line -->
+            <div class="line"></div>
+            <!-- 註冊新帳號 -->
+            <div class="media-options">
+                <a href="" class="field link register">
+                    <span>註冊新帳號</span>
+                </a>
+            </div>
+            <!-- facebook -->
+            <div class="media-options">
+                <a href="" class="field facebook">
+                    <i class="bx bxl-facebook facebook-icon"></i>
+                    <span>Login with Facebook</span>
+                </a>
+            </div>
+            <!-- google -->
+            <div class="media-options">
+                <a href="" class="field google">
+                    <i class="bx bxl-google google-icon"></i>
+                    <span>Login with Google</span>
+                </a>
+            </div>
+            <div class="forms_text">
+                <p>
+                    JR毛孩寵糧已於 2023/05/06 全新開幕，歡迎加入我們，如有遇到任何問題請至『聯絡我們』與客服人員聯繫。
+                </p>
+            </div>
+        </div>
+        <!-- 註冊 -->
+        <div class="form signup">
+            <div class="form-content">
+                <header>會員註冊</header>
+                <form action="">
+                    <!-- 信箱 -->
+                    <div class="field input-field">
+                        <input type="email" class="input" placeholder="請輸入電子郵件" required>
+                    </div>
+                    <!-- 密碼 -->
+                    <div class="field input-field">
+                        <input type="password" class="password" placeholder="請輸入密碼" required>
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+                    <!-- 確認密碼 -->
+                    <div class="field input-field">
+                        <input type="password" class="password" placeholder="請再次輸入密碼" required>
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+                    <!-- 登入按鈕 -->
+                    <div class="field button-field">
+                        <button>註冊</button>
+                    </div>
+                </form>
+                <div class="form-link-mange">
+                    <div class="form-link">
+                        <span><a class="link login-link" href="">返回登入</a></span>
+                    </div>
+                </div>
+            </div>
+            <!-- line 還沒有會員嗎？立即加入我們 -->
+            <div class="line"></div>
+            <!-- facebook -->
+            <div class="media-options">
+                <a href="" class="field facebook">
+                    <i class="bx bxl-facebook facebook-icon"></i>
+                    <span>Login with Facebook</span>
+                </a>
+            </div>
+            <!-- google -->
+            <div class="media-options">
+                <a href="" class="field google">
+                    <i class="bx bxl-google google-icon"></i>
+                    <span>Login with Google</span>
+                </a>
+            </div>
+            <div class="forms_text">
+                <p>
+                    JR毛孩寵糧已於 2023/05/06 全新開幕，歡迎加入我們，如有遇到任何問題請至『聯絡我們』與客服人員聯繫。
+                </p>
+            </div>
+        </div>
+    </div>
+        <!--  -->
+    <!-- 回頁首 -->
+        <!--  -->
+    <div id="angle" class="angle">
+        <a href="#top"> 
+            <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+        </a>
+    </div>  
+        <!--  -->
+    <!-- footer -->
+        <!--  -->
+    <footer>
+        <img src="https://i.imgur.com/HuXBLE0.png" alt="">
+        <div class="footer_link">
+            <a href="../about/about.html">
+                <p>關於我們</p>
+            </a>
+            <a href="../news/announcement.html">
+                <p>最新消息</p>
+            </a>
+            <a href="../product/new.html">
+                <p>最新商品</p>
+            </a>
+            <a href="../contact/contact.html">
+                <p>聯絡我們</p>
+            </a>
+            <a href="../product/cart.html">
+                <p>購物車</p>
+            </a>
+            <a href="../user/sign_in.html">
+                <p>登入/註冊</p>
+            </a>
+        </div>
+        <p>DESIGN BY  <a target="_blank" title="張竣傑個人網頁" href="https://reurl.cc/jlaaby">CHANG CHUN-CHIEH</a></p>
+    </footer>
+
+    <script src="../js/user/sign_in.js"></script>
+    <!-- cart -->
+    <script src="../js/product/main.js"></script>
+    <!-- icon -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!--google翻譯 -->
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
